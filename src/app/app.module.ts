@@ -9,6 +9,7 @@ import { ComicsComponent } from './components/comics/comics.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { CreatorsComponent } from './components/creators/creators.component';
 import { SeriesComponent } from './components/series/series.component';
+import { CharacterSingleComponent } from './components/character-single/character-single.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SeriesComponent } from './components/series/series.component';
     ComicsComponent,
     CharactersComponent,
     CreatorsComponent,
-    SeriesComponent
+    SeriesComponent,
+    CharacterSingleComponent
   ],
   imports: [
     BrowserModule,

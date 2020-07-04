@@ -1,3 +1,4 @@
+import { CharacterSingleComponent } from './components/character-single/character-single.component';
 import { SeriesComponent } from './components/series/series.component';
 import { CreatorsComponent } from './components/creators/creators.component';
 import { CharactersComponent } from './components/characters/characters.component';
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'characters',
     component: CharactersComponent,
+  },
+  {
+    path: 'character/:id',
+    component: CharacterSingleComponent,
   },
   {
     path: 'creators',
