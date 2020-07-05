@@ -15,7 +15,11 @@
   <div class="row">
     <div
       class="card col-sm-12 -col-sm-6 col-md-4 col-lg-3 mt-3 p-0"
-      *ngFor="let card of characterList | filter: filterCard"
+      *ngFor="
+        let card of characterList
+          | filter: filterCard
+          | paginate: { itemsPerPage: 10, currentPage: pageActual }
+      "
     >
       <a [routerLink]="['/character', card.id]">
         <img [src]="" class="card-img-top" alt="card.thumbnail.path" />
@@ -33,3 +37,11 @@
     </div>
   </div>
 </div>
+
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">
+    <pagination-controls
+      (pageChange)="pageActual = $event"
+    ></pagination-controls>
+  </div>
+</footer>

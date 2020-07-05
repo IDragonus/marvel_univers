@@ -20,6 +20,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FilterPipe } from './pipes/filter.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { FilterPipe } from './pipes/filter.pipe';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    NgxPaginationModule,
   ],
   providers: [CharactersvcService],
   bootstrap: [AppComponent],

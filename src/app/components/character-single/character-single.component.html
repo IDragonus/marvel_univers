@@ -1,17 +1,58 @@
 <div class="container">
   <div class="row">
     <div class="card col-sm-12 -col-sm-10 col-md-8 col-lg-6 center my-3 p-0">
-      <img [src]="singleCharacter.imagen" class="card-img-top" alt="" />
+      <img
+        [src]="singleCharacter2[0].thumbnail.path"
+        class="card-img-top"
+        alt=""
+      />
       <div class="card-body">
-        <h6 class="card-title text-center">{{ singleCharacter.name }}</h6>
+        <h4 class="card-title text-center">{{ singleCharacter2[0].name }}</h4>
         <p class="card-text">
-          {{ singleCharacter.description }}
+          {{ singleCharacter2[0].description }}
         </p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{ singleCharacter.comics }}</li>
-        <li class="list-group-item">{{ singleCharacter.series }}</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">
+          Comics: {{ singleCharacter2[0].comics.available }}
+
+          <ul *ngFor="let comic of comics2; let i = index">
+            <li class="list-group list-group-flush">
+              <!-- portada: {{ comic.thumbnail.path }} -->
+            </li>
+            <li class="list-group list-group-flush">
+              title: {{ comic.title }}
+            </li>
+            <li class="list-group list-group-flush">
+              precio: {{ comic.prices[0].price }}
+            </li>
+            <li *ngFor="let creator of creators[i].items; let j = index">
+              creators: {{ creator.name }} - Role: {{ creator.role }}
+            </li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          Series: {{ singleCharacter2[0].series.available }}
+
+          <ul *ngFor="let serie of series2; let i = index">
+            <li class="list-group list-group-flush">
+              <!-- portada: {{ serie.thumbnail.path }} -->
+            </li>
+            <li class="list-group list-group-flush">
+              Title: {{ serie.title }}
+            </li>
+            <li class="list-group list-group-flush">
+              Start year : {{ serie.startYear }}
+            </li>
+            <li class="list-group list-group-flush">
+              End year: {{ serie.endYear }}
+            </li>
+            <li class="list-group list-group-flush">Type: {{ serie.type }}</li>
+            <li class="list-group list-group-flush">
+              Clasification: {{ serie.rating }}
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
