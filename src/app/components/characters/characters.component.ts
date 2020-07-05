@@ -24,7 +24,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '2',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -33,7 +33,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '3',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -42,7 +42,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '4',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -51,7 +51,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '5',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -60,7 +60,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '6',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -69,7 +69,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '7',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -78,7 +78,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '8',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -87,7 +87,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '9',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -96,7 +96,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '10',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -105,7 +105,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '11',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -114,7 +114,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '12',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -123,7 +123,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '13',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -132,7 +132,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '14',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -141,7 +141,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '15',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -150,7 +150,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '16',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -159,7 +159,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '17',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
@@ -168,7 +168,7 @@ export class CharactersComponent implements OnInit {
       series: '4',
     },
     {
-      id: '1',
+      id: '18',
       imagen:
         'https://xoandelugo.org/wp-content/uploads/2018/06/capitan-america.jpg',
       name: 'Capitan America',
