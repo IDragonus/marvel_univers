@@ -1,3 +1,5 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CharactersvcService } from './services/charactersvc.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,13 +22,10 @@ import { CharacterSingleComponent } from './components/character-single/characte
     CharactersComponent,
     CreatorsComponent,
     SeriesComponent,
-    CharacterSingleComponent
+    CharacterSingleComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [CharactersvcService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
