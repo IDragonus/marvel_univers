@@ -1,20 +1,18 @@
 <div class="container">
   <div class="row">
     <div class="card col-sm-12 -col-sm-10 col-md-8 col-lg-6 center my-3 p-0">
-      <img [src]="cards.imagen" class="card-img-top" alt="" />
+      <img [src]="singleCharacter.imagen" class="card-img-top" alt="" />
       <div class="card-body">
-        <h6 class="card-title text-center">{{ cards.name }}</h6>
+        <h6 class="card-title text-center">{{ singleCharacter.name }}</h6>
         <p class="card-text">
-          {{ cards.description }}
+          {{ singleCharacter.description }}
         </p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{ cards.comics }}</li>
-        <li class="list-group-item">{{ cards.series }}</li>
+        <li class="list-group-item">{{ singleCharacter.comics }}</li>
+        <li class="list-group-item">{{ singleCharacter.series }}</li>
         <li class="list-group-item">Vestibulum at eros</li>
       </ul>
     </div>
   </div>
 </div>
-
-id: {{ cards.id }}

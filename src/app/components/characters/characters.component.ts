@@ -1,6 +1,10 @@
 import { CharactersvcService } from './../../services/charactersvc.service';
+import { Component, OnInit, PipeTransform } from '@angular/core';
+import { FormControl } from '@angular/forms';
+
 import { Observable } from 'rxjs';
-import { Component, OnInit } from '@angular/core';
+
+//import {NgbdSortableHeader, SortEvent} from './sortable.directive';
 
 @Component({
   selector: 'app-characters',
@@ -182,6 +186,11 @@ export class CharactersComponent implements OnInit {
 
   characters;
   characterList;
+  filterCard = '';
+  // selectedStates;
+  // total$: Observable<number>;
+  // filter = new FormControl('');
+  //search = new FormControl('')
 
   constructor(private character: CharactersvcService) {}
 
@@ -195,4 +204,16 @@ export class CharactersComponent implements OnInit {
       (error) => console.log('Error:', error)
     );
   }
+
+  // onKey(value) {
+  //   console.log('value', value);
+  //   this.selectedStates = this.search(value);
+  // }
+
+  // search(value: string) {
+  //   let filter = value.toString().toLowerCase();
+  //   return this.characterList.filter((option) =>
+  //     option.toString().toLowerCase().startsWith(filter)
+  //   );
+  // }
 }
