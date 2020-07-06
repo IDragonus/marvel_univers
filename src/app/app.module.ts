@@ -1,3 +1,5 @@
+import { CreatorssvcService } from './services/creatorssvc.service';
+import { ComicssvcService } from './services/comicssvc.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CharactersvcService } from './services/charactersvc.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,6 +23,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FilterPipe } from './pipes/filter.pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterComicsPipe } from './pipes/filter-comics.pipe';
+import { ComicSingleComponent } from './components/comic-single/comic-single.component';
+import { CreatorComponent } from './components/creator/creator.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +38,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SeriesComponent,
     CharacterSingleComponent,
     FilterPipe,
+    FilterComicsPipe,
+    ComicSingleComponent,
+    CreatorComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FormsModule,
     NgxPaginationModule,
   ],
-  providers: [CharactersvcService],
+  providers: [CharactersvcService, ComicssvcService, CreatorssvcService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

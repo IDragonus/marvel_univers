@@ -1,14 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter',
+  name: 'filterComics',
 })
-export class FilterPipe implements PipeTransform {
+export class FilterComicsPipe implements PipeTransform {
   transform(value: any, arg: any): any {
     const resultFilter = [];
     for (const card of value) {
       if (
-        card.name
+        card.title
           .toString()
           .toLowerCase()
           .indexOf(arg.toString().toLowerCase()) > -1

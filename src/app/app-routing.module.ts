@@ -1,3 +1,5 @@
+import { CreatorComponent } from './components/creator/creator.component';
+import { ComicSingleComponent } from './components/comic-single/comic-single.component';
 import { CharacterSingleComponent } from './components/character-single/character-single.component';
 import { SeriesComponent } from './components/series/series.component';
 import { CreatorsComponent } from './components/creators/creators.component';
@@ -22,6 +24,10 @@ const routes: Routes = [
     component: ComicsComponent,
   },
   {
+    path: 'comic/:id',
+    component: ComicSingleComponent,
+  },
+  {
     path: 'characters',
     component: CharactersComponent,
   },
@@ -32,6 +38,10 @@ const routes: Routes = [
   {
     path: 'creators',
     component: CreatorsComponent,
+  },
+  {
+    path: 'creator/:id',
+    component: CreatorComponent,
   },
   {
     path: 'series',

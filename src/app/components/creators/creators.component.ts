@@ -1,3 +1,4 @@
+import { CreatorssvcService } from './../../services/creatorssvc.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class CreatorsComponent implements OnInit {
   filterCard = '';
   pageActual: number = 1;
+  creator;
+  creator2;
 
-  constructor() {}
+  constructor(private creatorsSvc: CreatorssvcService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.creatorsSvc.getCreators().subscribe(
+      (data) => {
+        this.creator = data;
+        this.creator2 = this.creator.data.results;
+        console.log('creators data:', this.creator2);
+      },
+      (error) => console.log('Error:', error)
+    );
+  }
 }

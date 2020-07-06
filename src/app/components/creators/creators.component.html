@@ -12,23 +12,23 @@
     <div
       class="card col-sm-12 -col-sm-6 col-md-4 col-lg-3 mt-3 p-0"
       *ngFor="
-        let card of characterList
+        let creator of creator
           | filter: filterCard
           | paginate: { itemsPerPage: 10, currentPage: pageActual }
       "
     >
-      <a [routerLink]="['/character', card.id]">
-        <img [src]="" class="card-img-top" alt="card.thumbnail.path" />
+      <a [routerLink]="['/creator', creator.id]">
+        <img [src]="" class="card-img-top" alt="creator.thumbnail.path" />
       </a>
       <div class="card-body">
-        <h4 class="card-title text-center">{{ card.name }}</h4>
+        <h4 class="card-title text-center">{{ creator.firstName}}</h4>
         <p class="card-text">
-          {{ card.description }}
+          {{ creator.description }}
         </p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Comics: {{ card.comics.available }}</li>
-        <li class="list-group-item">Series: {{ card.series.available }}</li>
+        <li class="list-group-item">Comics: {{ creator.comics.available }}</li>
+        <li class="list-group-item">Series: {{ creator.series.available }}</li>
       </ul>
     </div>
   </div>
