@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="card col-sm-12 -col-sm-10 col-md-8 col-lg-6 center my-3 p-0">
+    <div class="card col-sm-12 col-md-10 center my-3 p-0">
       <!--   <img [src]="singleComic2[0].thumbnail.path" class="card-img-top" alt="" /> -->
       <div class="card-body">
         <h4 class="card-title text-center">{{ singleComic2?.title }}</h4>
@@ -17,7 +17,10 @@
               <!--  images: {{ character.thumbnail.path }} -->
             </li>
             <li class="list-group list-group-flush">
-              characters: {{ character.name }}
+              characters:
+              <a [routerLink]="['/character', character.id]">
+                {{ character.name }}
+              </a>
             </li>
           </ul>
         </li>
