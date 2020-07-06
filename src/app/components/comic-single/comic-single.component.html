@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="card col-sm-12 -col-sm-10 col-md-8 col-lg-6 center my-3 p-0">
+      <!--   <img [src]="singleComic2[0].thumbnail.path" class="card-img-top" alt="" /> -->
+      <div class="card-body">
+        <h4 class="card-title text-center">{{ singleComic2?.title }}</h4>
+        <p class="card-text">
+          {{ singleComic2?.description }}
+        </p>
+        <p class="card-text">precio: {{ precio }}</p>
+      </div>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <ul *ngFor="let character of characters2; let i = index">
+            <li class="list-group list-group-flush">
+              <!--  images: {{ character.thumbnail.path }} -->
+            </li>
+            <li class="list-group list-group-flush">
+              characters: {{ character.name }}
+            </li>
+          </ul>
+        </li>
+        <ul>
+          <li *ngFor="let creator of creators; let j = index">
+            {{ j }}
+            creators: {{ creator[j].name }}
+          </li>
+        </ul>
+        <!--
+                        <li class="list-group-item">
+            Series: {{ singleComic2[0].series.available }}
+  
+            <ul *ngFor="let serie of series2; let i = index">
+              <li class="list-group list-group-flush">
+                 portada: {{ serie.thumbnail.path }} 
+              </li>
+              <li class="list-group list-group-flush">
+                Title: {{ serie.title }}
+              </li>
+              <li class="list-group list-group-flush">
+                Start year : {{ serie.startYear }}
+              </li>
+              <li class="list-group list-group-flush">
+                End year: {{ serie.endYear }}
+              </li>
+              <li class="list-group list-group-flush">Type: {{ serie.type }}</li>
+              <li class="list-group list-group-flush">
+                Clasification: {{ serie.rating }}
+              </li>
+            </ul>
+          </li>
+        -->
+      </ul>
+    </div>
+  </div>
+</div>
