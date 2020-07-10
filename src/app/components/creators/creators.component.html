@@ -1,43 +1,28 @@
-<!-- <div class="container">
-  <div class="form-group margintop">
-    <input
-      type="text"
-      name="filterCard"
-      class="form-control"
-      placeholder="Search..."
-      [(ngModel)]="filterCard"
-    />
-  </div>
-  <div class="row">
+<div class="container">
+  <div class="row card-my">
     <div
-      class="card col-sm-12 -col-sm-6 col-md-4 col-lg-3 mt-3 p-0"
-      *ngFor="
-        let creator of creator
-          | filter: filterCard
-          | paginate: { itemsPerPage: 10, currentPage: pageActual }
-      "
+      class="card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-0 mb-3"
+      *ngFor="let card of creator2"
     >
-      <a [routerLink]="['/creator', creator.id]">
-        <img [src]="" class="card-img-top" alt="creator.thumbnail.path" />
-      </a>
+      <img
+        [src]="card.thumbnail.path"
+        class="card-img-top"
+        alt="card.thumbnail.path"
+      />
       <div class="card-body">
-        <h4 class="card-title text-center">{{ creator.firstName}}</h4>
-        <p class="card-text">
-          {{ creator.description }}
-        </p>
+        <a [routerLink]="['/creator', card.id]">
+          <h3 class="card-title text-center">{{ card.fullName }}</h3>
+        </a>
+        <hr />
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Comics paticipated:</b> {{ card.comics.available }}
+          </li>
+          <li class="list-group-item">
+            <b>Series participated:</b> {{ card.series.available }}
+          </li>
+        </ul>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Comics: {{ creator.comics.available }}</li>
-        <li class="list-group-item">Series: {{ creator.series.available }}</li>
-      </ul>
     </div>
   </div>
 </div>
-
-<footer class="page-footer font-small blue">
-  <div class="footer-copyright text-center py-3">
-    <pagination-controls
-      (pageChange)="pageActual = $event"
-    ></pagination-controls>
-  </div>
-</footer> -->

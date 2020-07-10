@@ -1,7 +1,9 @@
-/* .mat-form-field {
-  width: 100%;
-} */
+.card-my {
+  margin-top: 11vh;
+  margin-bottom: 5vh;
+}
 
-.margintop {
-  margin-top: 10vh;
+ul li {
+  padding-left: 0;
+  padding-right: 0;
 }

@@ -1,1 +1,30 @@
-<p>creator works!</p>
+<div class="container">
+  <div class="row card-my">
+    <div class="card card-center col-12 col-xl-10 p-0 mb-3">
+      <img src="" class="card-img-top" alt="" />
+      <div class="card-body">
+        <h3 class="card-title text-center">
+          <b>First name:</b> {{ oneCreator[0].firstName }}
+        </h3>
+        <h3 class="card-title text-center">
+          <b>Middle name:</b> {{ oneCreator[0].middleName }}
+        </h3>
+        <h3 class="card-title text-center">
+          <b>Last name: </b> {{ oneCreator[0].lastName }}
+        </h3>
+        <h3 class="card-title text-center">
+          <b>Full name:</b> {{ oneCreator[0].fullName }}
+        </h3>
+        <hr />
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Comics paticipated:</b> {{ oneCreator[0].comics.available }}
+          </li>
+          <li class="list-group-item">
+            <b>Series participated:</b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
